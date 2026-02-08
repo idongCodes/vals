@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 interface Message {
   name: string;
   text: string;
+  image?: string;
 }
 
 export default function MessageCarousel({ messages }: { messages: Message[] }) {
@@ -82,7 +83,7 @@ export default function MessageCarousel({ messages }: { messages: Message[] }) {
               }}
               className="absolute w-full h-full flex items-center justify-center p-2"
             >
-              <div className="bg-white/60 backdrop-blur-md p-8 rounded-2xl shadow-lg border border-red-100 w-full h-full flex flex-col justify-center items-center text-center">
+              <div className="bg-white/60 backdrop-blur-md p-8 rounded-2xl shadow-lg border border-red-100 w-full h-full flex flex-col justify-center items-center text-center relative">
                 <div className="flex-1 flex items-center justify-center overflow-y-auto w-full custom-scrollbar">
                   <p className="text-2xl md:text-3xl text-foreground/80 font-lacquer leading-relaxed">
                     "{messages[currentIndex].text}"
@@ -91,6 +92,16 @@ export default function MessageCarousel({ messages }: { messages: Message[] }) {
                 <p className="text-2xl text-red-500 font-sketch mt-6 w-full text-right pr-4">
                   - {messages[currentIndex].name}
                 </p>
+                {/* Circular photo on bottom left */}
+                {messages[currentIndex].image && (
+                  <div className="absolute bottom-4 left-4 w-12 h-12 rounded-full overflow-hidden border-2 border-red-300 shadow-md">
+                    <img 
+                      src={messages[currentIndex].image} 
+                      alt={`${messages[currentIndex].name}'s photo`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
               </div>
             </motion.div>
           </AnimatePresence>
