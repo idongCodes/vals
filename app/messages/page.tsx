@@ -3,12 +3,29 @@ import MessageCarousel from "../components/MessageCarousel";
 interface Message {
   name: string;
   text: string;
+  image?: string;
 }
 
 const messages: Message[] = [
   {
+    name: "Gloria",
+    text: "Happy Valentine's Day mommy, my first & forever Valentine! 💘 Love you!",
+    image: "/images/gloria.jpg"
+  },
+  {
+    name: "Clara",
+    text: "Happy Valentine's Day to the woman with the biggest heart I know. I love you, mom",
+    image: "/images/clara.jpg"
+  },
+  {
     name: "Idong",
-    text: "Happy Valentine's Day Mom! All your sacrifices do not go unoticed! We thank God for you everyday. We love you always!"
+    text: "Happy Valentine's Day Mom! All your sacrifices do not go unoticed! We thank God for you everyday. We love you always!",
+    image: "/images/idong.jpg"
+  },
+  {
+    name: "Kingsley, Nadescka, Charlie & Theo",
+    text: "Happy valentines day Mom/Grandma!",
+    image: "/images/knct.jpg"
   },
 ];
 
