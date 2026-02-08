@@ -23,20 +23,20 @@ export default function CardPage() {
       {/* Main Content */}
       <main className="flex flex-1 flex-col items-center justify-center gap-4 p-8 text-center">
         <h1 className="text-6xl font-bold text-red-500 font-sketch">
-          Happy Valentine's Day!
+          Happy Valentine&apos;s Day!
         </h1>
         <p className="text-2xl text-foreground/80 max-w-md mx-auto mt-8 font-lacquer">
-          To the heart of our family, thank you for your endless love and sacrifices. Thank you for never giving up on. Thank you for being you. None of us would be here if not for you.
+          To the heart of our family, thank you for your endless love and sacrifices. Thank you for never giving up. Thank you for being you. You're the reason we're all here!
         </p>
         <p className="text-2xl text-foreground/80 max-w-md mx-auto mt-4 font-lacquer">
-          With ♥️ from your Husband, your sons, your daughters, daughter in-laws, and all your grand babies!
+          With ♥️ from Dad, your sons, your daughters, daughter in-laws, and all your grand babies!
         </p>
 
         <Link
           href="/messages"
           className="mt-8 inline-block rounded-full bg-red-400 px-8 py-3 text-xl font-bold text-white shadow-lg transition-transform hover:scale-105 hover:bg-red-500 font-sketch"
         >
-          Messages
+          Read Messages
         </Link>
       </main>
     </div>

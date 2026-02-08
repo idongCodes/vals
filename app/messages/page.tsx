@@ -1,3 +1,17 @@
+import MessageCarousel from "../components/MessageCarousel";
+
+interface Message {
+  name: string;
+  text: string;
+}
+
+const messages: Message[] = [
+  {
+    name: "Idong",
+    text: "Happy Valentine's Day Mom! All your sacrifices do not go unoticed! We thank God for you everyday. We love you always!"
+  },
+];
+
 export default function MessagesPage() {
   return (
     <div className="flex min-h-screen flex-col font-sans">
@@ -12,11 +26,12 @@ export default function MessagesPage() {
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#fff1f2] to-transparent" />
       </div>
 
-      <main className="flex flex-col gap-8 items-center w-full max-w-2xl mx-auto p-8 text-center">
+      <main className="flex flex-col gap-8 items-center w-full max-w-4xl mx-auto p-8 text-center">
         <h1 className="text-6xl font-bold text-red-500 font-sketch">
           Messages from<br />Loved Ones
         </h1>
-         {/* Content */}
+        
+        <MessageCarousel messages={messages} />
       </main>
     </div>
   );
