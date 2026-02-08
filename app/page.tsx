@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col font-sans">
+    <div className="flex min-h-screen flex-col font-sans pt-12">
       {/* Hero Section */}
       <div className="relative h-[60vh] w-full overflow-hidden">
         <div
@@ -14,7 +14,7 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#fff1f2] via-[#fff1f2]/50 to-transparent" />
       </div>
 
-      <main className="flex flex-1 flex-col gap-4 items-center -mt-12 relative z-10 px-4 text-center">
+      <main className="flex flex-1 flex-col gap-4 items-center -mt-4 relative z-10 px-4 text-center">
         <h1 className="text-7xl font-bold text-red-500 -rotate-[8deg] font-sketch">
           Thank God for<br />Valentine's Day
         </h1>
