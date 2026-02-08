@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Londrina_Sketch, Lacquer } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import BrushHeart from "./components/BrushHeart";
+import FooterWrapper from "./components/FooterWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,21 +42,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${londrinaSketch.variable} ${lacquer.variable} antialiased flex flex-col min-h-screen`}
       >
+        <div className="absolute top-6 left-6 z-50">
+          <Link href="/">
+            <BrushHeart className="w-20 h-20" />
+          </Link>
+        </div>
         <div className="flex-1">
           {children}
         </div>
-        <footer className="p-4 text-center text-sm text-foreground/60">
-          &copy; Vals Day 2026. All Rights Reserved. Made with ♥️ by{" "}
-          <a
-            href="https://idong-essien.vercel.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-red-500 hover:text-red-600 transition-colors"
-          >
-            idongCodes
-          </a>
-          .
-        </footer>
+        <FooterWrapper />
       </body>
     </html>
   );

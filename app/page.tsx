@@ -1,15 +1,20 @@
 import Link from "next/link";
-import BrushHeart from "./components/BrushHeart";
 
 export default function Home() {
   return (
-    <div className="relative flex min-h-screen flex-col items-center justify-center p-8 text-center font-sans">
-      <div className="absolute top-6 left-6">
-        <Link href="/">
-          <BrushHeart className="w-20 h-20" />
-        </Link>
+    <div className="flex min-h-screen flex-col font-sans">
+      {/* Hero Section */}
+      <div className="relative h-[60vh] w-full overflow-hidden">
+        <div
+          className="absolute inset-0 h-full w-full bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/images/momma.JPG')" }}
+        />
+        {/* Vignette Overlay */}
+        <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,transparent_0%,#fff1f2_70%)]" />
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#fff1f2] via-[#fff1f2]/50 to-transparent" />
       </div>
-      <main className="flex flex-col gap-4 items-center">
+
+      <main className="flex flex-1 flex-col gap-4 items-center -mt-12 relative z-10 px-4 text-center">
         <h1 className="text-7xl font-bold text-red-500 -rotate-[8deg] font-sketch">
           Thank God for<br />Valentine's Day
         </h1>
