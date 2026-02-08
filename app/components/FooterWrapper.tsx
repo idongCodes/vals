@@ -9,7 +9,7 @@ export default function FooterWrapper({ children }: { children?: ReactNode }) {
   const isHome = pathname === "/";
 
   return (
-    <footer className={`${isHome ? "mt-4" : "mt-16"} p-4 text-center text-sm text-foreground/60`}>
+    <footer className={`${isHome ? "mt-16" : "mt-16"} p-4 text-center text-sm text-foreground/60`}>
       <FooterNav />
       &copy; Vals Day 2026. All Rights Reserved. Made with ♥️ by{" "}
       <a

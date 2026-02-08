@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Londrina_Sketch, Lacquer } from "next/font/google";
 import "./globals.css";
-import BookTransition from "./components/BookTransition"; // kept if needed or remove if unused, user removed it before
 import Link from "next/link";
 import BrushHeart from "./components/BrushHeart";
-import FooterNav from "./components/FooterNav";
 import FooterWrapper from "./components/FooterWrapper";
 
 const geistSans = Geist({
