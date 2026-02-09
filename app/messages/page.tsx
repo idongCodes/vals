@@ -18,15 +18,21 @@ const messages: Message[] = [
     image: "/images/clara.jpg"
   },
   {
-    name: "Idong",
-    text: "Happy Valentine's Day Mom! All your sacrifices do not go unoticed! We thank God for you everyday. We love you always!",
-    image: "/images/idong.jpg"
+    name: "Charles, Fiona, Micah, Remi & Luca",
+    text: "Happy Valentine's Gi Gi! We love you with all of our little (and big) hearts ♥️",
+    image: "/images/charles.jpg"
   },
   {
     name: "Kingsley, Nadescka, Charlie & Theo",
     text: "Happy valentines day Mom/Grandma!",
     image: "/images/knct.jpg"
   },
+  {
+    name: "Idong",
+    text: "Happy Valentine's Day Mom! All your sacrifices do not go unoticed! We thank God for you everyday. We love you always!",
+    image: "/images/idong.jpg"
+  },
+  
 ];
 
 export default function MessagesPage() {
