@@ -4,6 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import BrushHeart from "./components/BrushHeart";
 import FooterWrapper from "./components/FooterWrapper";
+import BackgroundMusic from "./components/BackgroundMusic";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,6 +52,7 @@ export default function RootLayout({
           {children}
         </div>
         <FooterWrapper />
+        <BackgroundMusic />
       </body>
     </html>
   );
