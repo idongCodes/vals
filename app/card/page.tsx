@@ -26,7 +26,7 @@ export default function CardPage() {
           Happy Valentine&apos;s Day!
         </h1>
         <p className="text-2xl text-foreground/80 max-w-md mx-auto mt-8 font-lacquer">
-          To the heart of our family, thank you for your endless love and sacrifices. Thank you for never giving up. Thank you for being you. You're the reason we're all here!
+          To the heart of our family, thank you for your endless love and sacrifices. Thank you for never giving up. Thank you for being you. You&apos;re the reason we&apos;re all here!
         </p>
         <p className="text-2xl text-foreground/80 max-w-md mx-auto mt-4 font-lacquer">
           With ♥️ from Dad, your sons, your daughters, daughter in-laws, and all your grand babies!
