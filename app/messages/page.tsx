@@ -8,6 +8,11 @@ interface Message {
 
 const messages: Message[] = [
   {
+    name: "Husband",
+    text: "Happy Valentine's day. I love you very much from the bottom of my heart ❤️",
+    image: "/images/dad.jpg"
+  },
+  {
     name: "Gloria",
     text: "Happy Valentine's Day mommy, my first & forever Valentine! 💘 Love you!",
     image: "/images/gloria.jpg"
@@ -32,7 +37,6 @@ const messages: Message[] = [
     text: "Happy Valentine's Day Mom! All your sacrifices do not go unoticed! We thank God for you everyday. We love you always!",
     image: "/images/idong.jpg"
   },
-  
 ];
 
 export default function MessagesPage() {
